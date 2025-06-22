@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bannière Cookie RGPD-Compliant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Bienvenue sur notre site !</h1>
+  <p>Ce site est un exemple de bannière cookie conforme au RGPD.</p>
+
+  <!-- Bannière Cookie -->
+  <div id="cookie-banner" class="cookie-banner">
+    <p>
+      Nous utilisons des cookies pour les finalités suivantes :
+      <strong>publicité personnalisée</strong>, <strong>mesure d'audience</strong> et <strong>personnalisation du contenu</strong>.
+      Vous pouvez accepter, refuser ou personnaliser vos choix à tout moment.
+      <a href="#" id="cookie-more-info">En savoir plus</a>
+    </p>
+    <div class="cookie-actions">
+      <button id="cookie-accept">Tout accepter</button>
+      <button id="cookie-customize">Personnaliser</button>
+      <button id="cookie-reject">Tout refuser</button>
+    </div>
+  </div>
+
+  <!-- Modal de personnalisation -->
+  <div id="cookie-modal" class="cookie-modal hidden">
+    <div class="cookie-modal-content">
+      <h2>Préférences des cookies</h2>
+      <form id="cookie-form">
+        <label>
+          <input type="checkbox" name="analytics">
+          Cookies de mesure d'audience (Google Analytics, etc.)
+        </label><br>
+        <label>
+          <input type="checkbox" name="ads">
+          Cookies publicitaires
+        </label><br>
+        <label>
+          <input type="checkbox" name="necessary" checked disabled>
+          Cookies strictement nécessaires (toujours actifs)
+        </label><br>
+        <div class="cookie-modal-actions">
+          <button type="submit">Enregistrer mes choix</button>
+          <button type="button" id="cookie-cancel">Annuler</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <button id="cookie-manage" class="cookie-manage">Gérer mes cookies</button>
+
+  <script src="cookie-banner.js"></script>
+</body>
+</html> 
